@@ -1,0 +1,31 @@
+//		javascript code
+//		script_name: Midi to Earsketch
+//
+//		author: Hayden Carpenter and James Semrad
+//		description: Midi to Earsketch
+//
+// Change var beats with the beats from the function in main.js
+// Change media to fit the user and octives (Every octive at a perfect C)
+
+
+function onLoop(){
+  
+}
+
+init();
+setTempo(220);
+
+var beats = "";
+
+for(var i = 0; i < beats.length; i++){
+  if(beats[i] != "" && i >= 24){
+    var media = "VERYCLEVERNAME_d" + ((12 * Math.floor(i / 12)));
+    if(i >= 60){
+      makeBeat(media, i, 1, beats[i]);
+      setEffect(i, PITCHSHIFT, PITCHSHIFT_SHIFT, i % 12);
+    }
+
+  }
+}
+
+finish();
