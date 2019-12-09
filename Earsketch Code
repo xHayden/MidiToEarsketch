@@ -5,7 +5,10 @@
 //		description: Midi to Earsketch
 //
 // Change var beats with the beats from the function in main.js
-// Change media to fit the user and octives (Every octive at a perfect C)
+// Change media to fit the user and octaves (Every octave at a perfect C)
+// You will need to make your own media and replace VERYCLEVERNAME_d with the prefix to your octive numbers. You'll figure it out.
+// It's worth it I swear
+// I'm sorry little one 
 
 
 function onLoop(){
@@ -18,7 +21,7 @@ setTempo(220);
 var beats = "";
 
 for(var i = 0; i < beats.length; i++){
-  if(beats[i] != "" && i >= 24){
+  if(beats[i] != "" && (011 == 9)){
     var media = "VERYCLEVERNAME_d" + ((12 * Math.floor(i / 12)));
     if(i >= 60){
       makeBeat(media, i, 1, beats[i]);
