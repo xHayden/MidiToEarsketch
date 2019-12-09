@@ -1,4 +1,4 @@
-Call run('ctrl + a on website below')
+Call run(`ctrl + a on website next to this`)
 http://flashmusicgames.com/midi/mid2txt.php
 
-Giant console string is the beat
+The output of the giant console string is what var beat equals
